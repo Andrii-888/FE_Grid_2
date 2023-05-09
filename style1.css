@@ -1,0 +1,53 @@
+body {
+  padding: 50px 100px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.grid_btn {
+  border: 1px blue white;
+  background-color: gray;
+  color: blue;
+  padding: 15px;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px;
+}
+.grid_btn:first-child {
+  background-color: yellow;
+  grid-column: 1 / span 1;
+}
+.grid_btn:nth-child(2) {
+  background-color: yellow;
+  grid-column: 2 / span 1;
+}
+.grid_btn:nth-child(3) {
+  grid-column: 7 / span 1;
+  background-color: yellow;
+}
+.grid_btn:nth-child(8) {
+  background-color: yellow;
+}
+.grid_btn:nth-child(9) {
+  background-color: yellow;
+}
+.grid_btn:nth-child(24) {
+  background-color: yellow;
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+.grid_btn:nth-child(25) {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+}
+.grid_btn:nth-child(26) {
+  grid-column: 4 / span 1;
+}
+.grid_btn:nth-child(28) {
+  background-color: yellow;
+  grid-column: 6 / span 1;
+}
